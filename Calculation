@@ -1,0 +1,23 @@
+#import the required modules
+import numpy as np
+from statistics import mode
+
+calories = [1417, 1611, 1483, 1651, 1333, 1368, 1359, #CY
+            1390, 1381,  652, 1390,  352, 1381, 1390, #Taki
+            1060, 1205 ,1210 ,1020,  940,  880,  940, #Fasihah
+            1701,1170.5,1627.5,2456,1221.5,1294,1044, #Islahiah
+             934, 1095, 1196, 1310,  980,  984, 1249] #Atifah
+
+print("Maximum calories intake:",max(calories))
+
+print("\nMinimum calories intake:",min(calories))
+
+print("\nMode calories intake:", mode(calories))
+
+print("\nFrequency of mode:",calories.count(mode(calories)))
+
+print("\nMean calories intake:", np.mean(calories))
+
+print("\nVariance:",np.var(calories))
+
+print("\nStandard deviation:",np.std(calories))
