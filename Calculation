@@ -1,6 +1,7 @@
 #import the required modules
 import numpy as np
 from statistics import mode
+import matplotlib.pyplot as plt
 
 calories = [1417, 1611, 1483, 1651, 1333, 1368, 1359, #CY
             1390, 1381,  652, 1390,  352, 1381, 1390, #Taki
@@ -21,3 +22,11 @@ print("\nMean calories intake:", np.mean(calories))
 print("\nVariance:",np.var(calories))
 
 print("\nStandard deviation:",np.std(calories))
+
+plt.title('Boxplot for calories intake') 
+plt.boxplot(calories)
+plt.show()
+
+plt.title('Histogram for calories intake') 
+plt.hist(calories)
+plt.show()
