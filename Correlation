@@ -16,7 +16,7 @@ plt.scatter(calories,weight)
 plt.plot(calories, mymodel)
 plt.show()
 
-#a.	correlation between physical activities and the weight of students
+#correlation between physical activities and the weight of students
 slope, intercept, r, p, std_err = stats.linregress(phy, weight)
 mymodel = list(map(myfunction, phy))
 plt.xlabel('Physical activities')
@@ -25,7 +25,7 @@ plt.scatter(phy, weight)
 plt.plot(phy, mymodel)
 plt.show()
 
-#b.	correlation between physical activities and calorie intakes
+#correlation between physical activities and calorie intakes
 slope, intercept, r, p, std_err = stats.linregress(phy,calories)
 mymodel = list(map(myfunction, phy))
 plt.xlabel('Physical activities')
