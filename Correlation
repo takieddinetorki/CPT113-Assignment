@@ -1,0 +1,35 @@
+import matplotlib.pyplot as plt
+from scipy import stats
+calories = [10222,7936,7255,10514.5,7748]
+weight = [47,80,46,85,63]
+phy = [1869,1869,1869,1869,2040]
+
+def myfunction(x):
+    return slope * x + intercept
+
+#correaltion between calories intake and the weight of students
+slope, intercept, r, p, std_err = stats.linregress(calories, weight)
+mymodel = list(map(myfunction, calories))
+plt.xlabel('Calories intake')
+plt.ylabel('Weight')
+plt.scatter(calories,weight)
+plt.plot(calories, mymodel)
+plt.show()
+
+#a.	correlation between physical activities and the weight of students
+slope, intercept, r, p, std_err = stats.linregress(phy, weight)
+mymodel = list(map(myfunction, phy))
+plt.xlabel('Physical activities')
+plt.ylabel('Weight')
+plt.scatter(phy, weight)
+plt.plot(phy, mymodel)
+plt.show()
+
+#b.	correlation between physical activities and calorie intakes
+slope, intercept, r, p, std_err = stats.linregress(phy,calories)
+mymodel = list(map(myfunction, phy))
+plt.xlabel('Physical activities')
+plt.ylabel('Calories intake')
+plt.scatter(phy,calories)
+plt.plot(phy, mymodel)
+plt.show()
