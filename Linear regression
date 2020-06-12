@@ -24,7 +24,7 @@ def linear_regression(x,y):
 
 "Correlation between calories intake and the weight of students"
 plt.title('Correlation between calories intake and the weight of students')
-plt.xlabel('Calories intake (calorie)')
+plt.xlabel('Calories intake (calories)')
 plt.ylabel('Weight (kg)')
 linear_regression(calories, weight)
 
@@ -36,6 +36,6 @@ linear_regression(phy, weight)
 
 "Correlation between physical activities and calories intakes"
 plt.title('Correlation between physical activities and calories intakes')
-plt.xlabel('Physical activity (calorie)')
-plt.ylabel('Calories intake (calorie)')
+plt.xlabel('Physical activity (calories)')
+plt.ylabel('Calories intake (calories)')
 linear_regression(phy, calories)
