@@ -5,7 +5,7 @@ calories = [10222,7936,7255,10514.5,7748]
 weight = [47,80,46,85,63]
 phy = [1869,1869,1869,1869,2040]
 
-"Create a linear function for the linear regression to return the y-axis values of the linear regression"
+"Create a linear function of the linear regression to return the y-axis values of the linear regression"
 def linear_func(slope,intercept,x):
     return slope * x + intercept
 
