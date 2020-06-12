@@ -14,7 +14,7 @@ def linear_func(x):
 slope, intercept, r, p, std_err = stats.linregress(calories, weight)
 #Create an array of y-axis values of the linear regression by passing the values of calories to linear_func
 regression = list(map(linear_func, calories))
-plt.title("Correlation between calories intake and the weight of students")
+plt.title('Correlation between calories intake and the weight of students')
 plt.xlabel('Calories intake (calories)')
 plt.ylabel('Weight (kg)')
 #Plot the graph of calories intake against weight
@@ -29,7 +29,7 @@ plt.show()
 slope, intercept, r, p, std_err = stats.linregress(phy, weight)
 #Create an array of y-axis values of the linear regression by passing the values of physical activities to linear_func
 regression = list(map(linear_func, phy))
-plt.title("Correlation between physical activities and the weight of students")
+plt.title('Correlation between physical activities and the weight of students')
 plt.xlabel('Physical activities (calories)')
 plt.ylabel('Weight (kg)')
 #Plot the graph of physical activities against weight
@@ -44,7 +44,7 @@ plt.show()
 slope, intercept, r, p, std_err = stats.linregress(phy,calories)
 #Create an array of y-axis values of the linear regression by passing the values of physical activities to linear_func
 regression = list(map(linear_func, phy))
-plt.title("Correlation between physical activities and calorie intakes")
+plt.title('Correlation between physical activities and calorie intakes')
 plt.xlabel('Physical activities (calories)')
 plt.ylabel('Calories intake (calories)')
 #Plot the graph of physical activities against calories intake
