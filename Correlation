@@ -9,12 +9,12 @@ phy = [1869,1869,1869,1869,2040]
 def linear_func(x):
     return slope * x + intercept
 
-"Correaltion between calories intake and the weight of students"
+"Correlation between calories intake and the weight of students"
 #Assign values to slope and intercept according to the values of calories intakes and weight
 slope, intercept, r, p, std_err = stats.linregress(calories, weight)
 #Create an array of y-axis values of the linear regression by passing the values of calories to linear_func
 regression = list(map(linear_func, calories))
-plt.title("Correaltion between calories intake and the weight of students")
+plt.title("Correlation between calories intake and the weight of students")
 plt.xlabel('Calories intake (calories)')
 plt.ylabel('Weight (kg)')
 #Plot the graph of calories intake against weight
