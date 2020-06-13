@@ -1,3 +1,4 @@
+WONG CHONG YANG
 #import the required modules
 import numpy as np
 from statistics import mode
