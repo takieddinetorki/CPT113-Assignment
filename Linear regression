@@ -1,10 +1,6 @@
 import matplotlib.pyplot as plt
 from scipy import stats
 
-calorie = [10222,7936,7255,10514.5,7748]
-weight = [47,80,46,85,63]
-phy = [1869,1869,1869,1869,2040]
-
 "Create a linear function of the linear regression to return the y-axis values of the linear regression"
 def linear_func(slope,intercept,x):
     return slope * x + intercept
@@ -22,20 +18,24 @@ def linear_regression(x,y):
     #Displat the graphs
     plt.show()
 
-"Correlation between calorie intakes and the weight of students"
-plt.title('Correlation between calorie intakes and the weight of students')
+calorie = [10222,7936,7255,10514.5,7748]
+weight = [47,80,46,85,63]
+phy = [1869,1869,1869,1869,2040]
+
+"Correlation between the calorie intakes and the weights of students"
+plt.title('Correlation between the calorie intakes and the weights of students')
 plt.xlabel('Calories intake (kcal)')
 plt.ylabel('Weight (kg)')
 linear_regression(calorie, weight)
 
-"Correlation between physical activities and the weight of students"
-plt.title('Correlation between physical activities and the weight of students')
+"Correlation between the physical activities and the weights of students"
+plt.title('Correlation between the physical activities and the weights of students')
 plt.xlabel('Physical activity (kcal)')
 plt.ylabel('Weight (kg)')
 linear_regression(phy, weight)
 
-"Correlation between physical activities and calorie intakes"
-plt.title('Correlation between physical activities and calorie intakes')
+"Correlation between the physical activities and the calorie intakes of students"
+plt.title('Correlation between the physical activities and the calorie intakes of students')
 plt.xlabel('Physical activity (kcal)')
 plt.ylabel('Calorie intake (kcal)')
 linear_regression(phy, calorie)
