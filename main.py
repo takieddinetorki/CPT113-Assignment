@@ -51,7 +51,7 @@ class MainWindow(wx.Frame):
         wx.MessageBox("Dear lecturer checking this assignment,\n\n"
                         "I would like to thank you for taking the time and effort to read this","FYI", wx.OK|wx.ICON_INFORMATION)
         openFileDialog = wx.FileDialog(self, "Open file with data", "", "",
-        "", wx.FD_OPEN | wx.FD_FILE_MUST_EXIST)
+        "Excel files (*.xlsx) | *.xlsx", wx.FD_OPEN | wx.FD_FILE_MUST_EXIST)
         openFileDialog.ShowModal()
         if openFileDialog.GetPath() == "":
             wx.MessageBox("You have not selected any files"," ", wx.OK|wx.ICON_INFORMATION)
